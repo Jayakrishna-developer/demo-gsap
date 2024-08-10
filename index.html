@@ -1,0 +1,482 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK MAR studio</title>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <!-- Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg ">
+        <div class="container-fluid justify-content-between">
+            <!-- Left elements -->
+            <div class="d-flex">
+                <!-- Brand -->
+                <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+                    <img src="./images/M3.webp"  height="30"
+                        alt="MDB Logo" loading="lazy" style="margin-top: 2px;;" />
+                </a>
+
+                <!-- Search form -->
+                <form class="input-group w-auto my-auto d-none d-sm-flex">
+                    <input autocomplete="off" type="search" class="form-control rounded" placeholder="Search"
+                        style="min-width: 125px;" />
+                    <span class="input-group-text border-0 d-none d-lg-flex"><i class="fas fa-search"></i></span>
+                </form>
+            </div>
+            <!-- Left elements -->
+
+            <!-- Center elements -->
+            <ul class="navbar-nav flex-row d-none d-md-flex">
+                <li class="nav-item me-3 me-lg-1 active">
+                    <a class="nav-link" href="#">
+                HOME
+                    </a>
+                </li>
+
+                <li class="nav-item me-3 me-lg-1">
+                    <a class="nav-link" href="#">
+                     STUDIOS
+                    </a>
+                </li>
+
+                <li class="nav-item me-3 me-lg-1">
+                    <a class="nav-link" href="#">
+                      CLIENTS
+                    </a>
+                </li>
+
+                <li class="nav-item me-3 me-lg-1">
+                    <a class="nav-link" href="#">
+                     BOOK ONLINE
+                    </a>
+                </li>
+
+                <li class="nav-item me-3 me-lg-1">
+                    <a class="nav-link" href="#">
+                      REGISTER
+                    </a>
+                </li>
+            </ul>
+            <!-- Center elements -->
+
+            <!-- Right elements -->
+            <ul class="navbar-nav flex-row">
+               
+                <li class="nav-item me-3 me-lg-1">
+                    <a class="nav-link" href="#">
+                        <span><i class="fas fa-plus-circle fa-lg"></i></span>
+                    </a>
+                </li>
+               
+                <li class="nav-item dropdown me-3 me-lg-1">
+                    <a data-mdb-dropdown-init class="nav-link dropdown-toggle hidden-arrow" href="#"
+                        id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                        <i class="fas fa-bell fa-lg"></i>
+                        <span class="badge rounded-pill badge-notification bg-danger">12</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="#">Some news</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Another news</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown me-3 me-lg-1">
+                    <a data-mdb-dropdown-init class="nav-link dropdown-toggle hidden-arrow" href="#"
+                        id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                        <i class="fas fa-chevron-circle-down fa-lg"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="#">Some news</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Another news</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Right elements -->
+        </div>
+    </nav>
+    <!-- Navbar -->
+    <section id="intro">
+        <div class="studio">
+            <div class="container w-50">
+                <h1> JK Mar<i class="fa-solid fa-square" style="color: #63E6BE;"></i></h1>
+                <h2> RECORDINGS STUDIO</h2>
+            </div>
+            <div class="container w-25">
+                <button>BOOK ONLINE</button>
+            </div>
+            <div class="container w-50">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="img1-wrap">
+                            <div class="img1"></div>
+                            <p>RECORDINGS</p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="img2-wrap">
+                            <div class="img2"></div>
+                            <p>MIXING</p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="img3-wrap">
+                            <div class="img3"></div>
+                            <p>MASTERING</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="hr-with-icons">
+                <hr>
+                <div class="icons">
+                    <div class="icon-with-text">
+                        <i class="fa-solid fa-caret-down"></i>
+                        <p>RECORDINGS</p>
+                        <div class="description">
+                            <p>Our studio offers state-of-the-art recording facilities <br> with expert engineers to
+                                ensure the <br> highest
+                                quality sound.</p>
+                        </div>
+                    </div>
+                    <div class="icon-with-text">
+                        <i class="fa-solid fa-caret-down"></i>
+                        <p>MIXING</p>
+                        <div class="description">
+                            <p>We provide professional mixing services to blend your tracks <br> perfectly, ensuring a
+                                balanced and
+                                polished sound.</p>
+                        </div>
+                    </div>
+                    <div class="icon-with-text">
+                        <i class="fa-solid fa-caret-down"></i>
+                        <p>MASTERING</p>
+                        <div class="description">
+                            <p>Our mastering process enhances your final mix, <br> giving it the clarity and punch
+                                needed for <br> any
+                                platform or medium.</p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <i id="sep" class="fa-solid fa-caret-down">
+                    <hr>
+                </i>
+            </div>
+
+
+
+    </section>
+    <section id="the_studio">
+        <h1 >THE STUDIO</h1>
+        <p>
+            At JK Mar Recordings Studio, we offer a state-of-the-art recording environment tailored for musicians,
+            vocalists,
+            and<br> producers. Our studio is equipped with the latest technology,ensuring the highest quality sound for
+            your<br>
+            projects. Whether you're recording, mixing, or mastering, our experienced team is <br> here to bring your
+            visionto life
+            with precision and creativity.
+        </p>
+        <div class="container w-100">
+            <div class="row">
+                <div class="col-4">
+                    <div class="bg-image hover-zoom">
+                        <img src="./images/s1.webp" class="w-75" />
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bg-image hover-zoom">
+                        <img src="./images/s2.webp" class="w-75" />
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bg-image hover-zoom">
+                        <img src="./images/s3.webp" class="w-75" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section id="equipment">
+        <i id="sep2" class="fa-solid fa-caret-down"></i>
+        <h1>OUR EQUIPMENT</h1>
+        <div class="container w-75">
+            <div class="row">
+                <div class="col-4">
+                    <img src="./images/e6.png" class="img-fluid" alt="...">
+                    <button class="btn-2">RECORDERS</button>
+                </div>
+                <div class="col-4">
+                    <img src="./images/e2.png" class="img-fluid" alt="...">
+                    <button class="btn-2">MIXIERS</button>
+                </div>
+
+                <div class="col-4">
+                    <img src="./images/e3.png" class="img-fluid" alt="...">
+                    <button class="btn-2">MICROPHONES</button>
+                </div>
+            </div>
+        </div>
+        <div class="container w-75">
+            <div class="row">
+                <div class="col-4">
+                    <img src="./images/e4.png" class="img-fluid" alt="...">
+                    <button class="btn-3">OUT BOARDGEAR</button>
+                </div>
+                <div class="col-4">
+                    <img height="10px" src="./images/e5.png" class="img-fluid" alt="...">
+                    <button class="btn-4">MONITORING</button>
+                </div>
+
+                <div class="col-4">
+                    <img src="./images/e1.png" class="img-fluid" alt="...">
+                    <button class="btn-5">INSTRUMENTS</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="clients">
+        <i id="sep3" class="fa-solid fa-caret-down"></i>
+        <h1>CLIENTS</h1>
+        <div class="container w-75">
+            <div class="row">
+                <div class="col-5"><img src="./images/ed.webp" class="img-fluid w-75"alt=""></div>
+                <div class="col-1"></div>
+                <div class="col-6">
+                    <h4>ARTIST NAME</h4>
+                    <p>Ed Sheeran is a British singer-songwriter known for his soulful voice, heartfelt lyrics, and acoustic guitar skills.
+                        With hits like "Shape of You," "Thinking Out Loud," and "Perfect," he has become one of the best-selling music
+                        artists in the world. His blend of pop, folk, and hip-hop has earned him numerous awards, including multiple Grammy
+                        Awards, and a global fanbase.</p>
+                        <button>HEAR MORE CLIENTS</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section  id="rates">
+        <h1 >RATES</h1>
+        <div class="container w-75">
+            <div class="row">
+                <div class="col-3 "><h5>STUDIO TIME</h5></div>
+                <div class="col-3 "> <h5>MIXING</h5></div>
+                <div class="col-3  "> <h5>MASTERING</h5></div>
+                <div class="col-3 "> <h5>PRODUCTION</h5></div>
+            </div>
+        </div>
+    </section>
+    <section id="book">
+        <h1>BOOK A SESSION</h1>
+        <h4>Ready To Book a Session?</h4>
+        <div class="container w-50">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email address">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Phone number</label>
+        <input class="form-control" type="text" placeholder="Phone no" aria-label="default input example">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Type your message here</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1 " placeholder="Type your message here" rows="3"></textarea>
+        </div>
+        <button>Submit</button>
+        </div>
+    </section>
+    <section id="time">
+        <div class="container w-50">
+            <div class="row">
+                <div class="col-5"><p>JK Mar Studio, 1234 Creative Lane, Suite 5567, Innovation Park, Pathanamthitta, Kerala, 689645, India</p>
+</div>
+                <div class="col-1">
+                    <h1></h1>
+                </div>
+                <div class="col-6"><p>Our studio is open 7 days a week: <br>
+                
+                
+                
+                Monday - Friday 8am - 11pm <br>
+                
+                Saturday - 10am - 11pm <br>
+                
+                Sunday - 12pm - 11pm</p></div>
+            </div>
+        </div>
+    </section>
+<!-- Footer -->
+<footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-between p-4 text-white" style="background-color:rgb(4, 201, 188) ">
+        <!-- Left -->
+        <div class="me-5">
+            <span>Connect with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+            <a href="https://facebook.com/jkmarrecordingstudio" class="text-white me-4" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/jkmarrecordingstudio" class="text-white me-4" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://plus.google.com/jkmarrecordingstudio" class="text-white me-4" target="_blank">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="https://instagram.com/jkmarrecordingstudio" class="text-white me-4" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com/company/jkmarrecordingstudio" class="text-white me-4" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/jkmarrecordingstudio" class="text-white me-4" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold">JK Mar Recording Studio</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                        Elevate your sound with JK Mar Recording Studio. Our state-of-the-art facilities and experienced
+                        engineers ensure the highest quality recording, mixing, and mastering for all your audio needs.
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Services</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                        <a href="#!" class="text-dark">Recording</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-dark">Mixing</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-dark">Mastering</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-dark">Music Production</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Useful Links</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                        <a href="#!" class="text-dark">Portfolio</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-dark">About Us</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-dark">Blog</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-dark">Contact</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Contact</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p><i class="fas fa-home mr-3"></i> 1234 Sound Avenue, Suite 567, Music City, Pathanamthitta,
+                        Kerala, 689645, India</p>
+                    <p><i class="fas fa-envelope mr-3"></i> contact@jkmarrecordingstudio.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> +91 987 654 3210</p>
+                    <p><i class="fas fa-print mr-3"></i> +91 987 654 3211</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color:rgb(4, 201, 188) ">
+        © 2024 Copyright:
+        <a class="text-dark" href="https://jkmarrecordingstudio.com/">JK Mar Recording Studio</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+    <script src="./script.js">
+
+
+    </script>
+
+</body>
+
+</html>
